@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./Images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h5>My balance</h5>
+          <p>$921.48</p>
+        </div>
+        <div class="circle">
+          <div class="day"></div>
+          <div class="night"></div>
+        </div>
+      </header>
+
+      <section>
+        <div class="expenses-chart">
+          <h2 style="padding: 4px 10px">Spending - Last 7 days</h2>
+          <div id="live"></div>
+        </div>
+        <hr />
+        <div class="cur">
+          <div class="this-month">
+            <h3>Total this month</h3>
+            <p>$478.33</p>
+          </div>
+          <div class="last-month">
+            <p>+2.4%</p>
+            <h3>from last month</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

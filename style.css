@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Changa:wght@200&family=Gulzar&family=Ibarra+Real+Nova:wght@600&family=Kanit:wght@200;300&family=Kdam+Thmor+Pro&family=Orbitron:wght@400;600;900&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;1,400&family=Titillium+Web:wght@200&display=swap");
+
+:root {
+  --outer: #f7e9dc;
+  --header: #ec755d;
+  --body: #fdfcf8;
+  --black: #382314;
+  --line: #f8e9dd;
+  --cur: #343a40;
+}
+
+body {
+  background-color: var(--outer);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Abhaya Libre", serif;
+}
+.container {
+  width: 400px;
+}
+
+header {
+  background-color: var(--header);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 14px;
+  color: white;
+}
+
+h5 {
+  font-size: 16px;
+  margin: 20px;
+  opacity: 0.8;
+}
+header p {
+  font-size: 30px;
+  margin: 20px;
+}
+
+hr {
+  background-color: var(--line);
+  height: 2px;
+  border: none;
+  margin-top: 60px;
+}
+
+section {
+  background-color: var(--body);
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+
+.day,
+.night {
+  width: 50%;
+  height: 34%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.day {
+  border: 2px solid white;
+  margin-right: -20px;
+}
+.night {
+  background-color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.cur {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.last-month h3 {
+  margin-top: 0;
+  opacity: 0.5;
+}
+.last-month p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.this-month h3 {
+  opacity: 0.5;
+}
+.this-month p {
+  font-size: 40px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#live {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-align: start;
+}
+
+.chart-container {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  width: 40px;
+  background-color: var(--header);
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cur-amount {
+  margin-top: -30px;
+  font-size: 14px;
+  background-color: var(--cur);
+  width: 40px;
+  padding: 4px 6px;
+  color: #fff;
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+.chart-container:hover .cur-amount {
+  visibility: visible;
+}
+
+.cur-day {
+  margin-bottom: -20px;
+  position: absolute;
+  bottom: -10px;
+  font-size: 14px;
+}
+
+.cur-amount {
+  margin-left: -4px;
+}
+.cur-day {
+  margin-left: 4px;
+  cursor: context-menu;
+}
+
+@media (max-width: 367px) {
+  .chart-container {
+    width: 24px;
+  }
+}
