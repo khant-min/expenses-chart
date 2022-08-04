@@ -25,7 +25,7 @@ fetch(src)
 
     for (let i = 0; i < curData.length; i++) {
       curData[i].style.height = `${mainData[i].amount * 3}px`;
-      curData[date.getDay()].style.backgroundColor = "#76B5BD";
+      curData[date.getDay() - 1].style.backgroundColor = "#76B5BD";
     }
 
     // day - night
@@ -49,7 +49,7 @@ fetch(src)
 
         for (let i = 0; i < curData.length; i++) {
           curData[i].style.backgroundColor = "#ec755d";
-          curData[date.getDay()].style.backgroundColor = "#76B5BD";
+          curData[date.getDay() - 1].style.backgroundColor = "#76B5BD";
         }
         body.style.backgroundColor = "#f7e9dc";
         header.style.backgroundColor = "#ec755d";
@@ -65,7 +65,7 @@ fetch(src)
 
         for (let i = 0; i < curData.length; i++) {
           curData[i].style.backgroundColor = "#76B5BD";
-          curData[date.getDay()].style.backgroundColor = "#ec755d";
+          curData[date.getDay() - 1].style.backgroundColor = "#ec755d";
         }
         body.style.backgroundColor = "#064663";
         header.style.backgroundColor = "#76B5BD";
